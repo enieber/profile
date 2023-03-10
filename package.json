@@ -1,0 +1,22 @@
+{
+  "name": "personal-data",
+  "version": "0.0.1",
+  "description": "my personal data",
+  "main": "index.js",
+  "author": "Enieber Cunha<eniebercunha@gmail.com>",
+  "license": "MPL",
+  "private": false,
+  "dependencies": {
+    "markdown-to-api": "^1.0.0",
+    "markdown-to-json": "^0.5.4",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
