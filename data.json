@@ -44,7 +44,7 @@
     {
       "title": "Frontend Developer - Cognizant",
       "start": "01/2022",
-      "description": "Developer frontend aplication with rules of crop science in pharmaceutical company. Using typescript to create microfronends and unit test."
+      "description": "Developer frontend aplication with rules of crop science in pharmaceutical company. Using typescript to create microfronends in react connected in Rest api and deployed in Azure cloud."
     },
     {
       "title": "Backend Developer - Cognizant",
