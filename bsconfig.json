@@ -1,0 +1,28 @@
+{
+  "name": "profile",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "pages",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6-global",
+      "in-source": true
+    }
+  ],
+  "reason": { "react-jsx": 3 },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "@rescript/react",
+    "rescript-next",
+    "@glennsl/rescript-fetch",
+    "rescript-jzon"
+  ],
+  "ppx-flags": []
+}

@@ -4,7 +4,11 @@ in pkgs.mkShell rec {
   name = "data-profile";
   
   buildInputs = with pkgs; [
-    nodejs yarn
+    ocaml
+    dune_2
+    python3
+    nodejs
+    yarn
   ];
 }    
 
