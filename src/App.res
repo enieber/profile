@@ -28,22 +28,15 @@ type formation = {
 type profile = {
   name: string,
   description: string,
-  contents: array<content>,
-  skills: array<string>,
+ skills: array<string>,
   experiences: array<experience>,
-  freelances: array<freelance>,
-  formations: array<formation>
+ formations: array<formation>
 };
 
-module Codecs = {
-  let content = Jzon.object2(
-    ({ name, link }) => ( name, link ),
-    ((name, link)) => { name,link }->Ok,
+type skill = string;
 
-    Jzon.field("name", Jzon.string),
-    Jzon.field("link", Jzon.string),
-  ); 
-  
+module Codecs = {
+
   let experience = Jzon.object4(
     ({ start, title, end, description }) => ( start,  title,  end,   description ),
     (( start, title, end, description )) => { start,  title,  end,   description }->Ok,
@@ -54,15 +47,7 @@ module Codecs = {
     Jzon.field("description", Jzon.string),
   );
 
-  let freelance = Jzon.object2(
-    ({ title, description  }) => ( title,  description ),
-    (( title,  description )) => { title,  description }->Ok,
-  
-    Jzon.field("title", Jzon.string),
-    Jzon.field("description", Jzon.string),
-  ); 
-  
-  let formation = Jzon.object4(
+  let formations = Jzon.object4(
     ({ locale, title, periodic, description }) => ( locale, title, periodic, description ),
     (( locale, title, periodic, description )) => { locale, title, periodic, description }->Ok,
     
@@ -71,59 +56,45 @@ module Codecs = {
     Jzon.field("periodic", Jzon.string),
     Jzon.field("description", Jzon.string),
   );
+/*  
+  let freelance = Jzon.object2(
+    ({ title, description  }) => ( title,  description ),
+    (( title,  description )) => { title,  description }->Ok,
   
-  let profile = Jzon.object7(
-    ({
-      name,
-      description,
-      contents,
-      skills,
-      experiences,
-      freelances,
-      formation
-    }) => (
-      name,
-      description,
-      contents,
-      skills,
-      experiences,
-      freelances,
-      formations
-    ),
+    Jzon.field("title", Jzon.string),
+    Jzon.field("description", Jzon.string),
+  ); 
+  
+  let content = Jzon.object2(
+    ({ name, link }) => (name, link),
+    ((name, link)) => { name,link }->Ok,
+
+    Jzon.field("name", Jzon.string),
+    Jzon.field("link", Jzon.string),
+  ); 
+  */ 
+  let profile = Jzon.object5(
+    ({ name, description, skills, experiences, formations }) => 
+    (( name, description, skills, experiences, formations )),  
     
-    
-    ((
-      name,
-      description,
-      contents,
-      skills,
-      experiences,
-      freelances,
-      formation
-    )) => {
-      name,
-      description,
-      contents,
-      skills,
-      experiences,
-      freelances,
-      formations
-    }->Ok,
+    (( name, description, skills, experiences, formations  )) => {
+       name, description, skills, experiences, formations  }->Ok,
 
     Jzon.field("name", Jzon.string),
     Jzon.field("description", Jzon.string),
-    Jzon.field("contents", Jzon.array(content)),
-    Jzon.field("skills", Jzon.array(skill)),
+
+    Jzon.field("skills", Jzon.array(Jzon.string)),
     Jzon.field("experiences", Jzon.array(experience)),
-    Jzon.field("formations", Jzon.array(formation)),
-    Jzon.field("freelances", Jzon.array(freelance)),
+    Jzon.field("formations", Jzon.array(formations)),
+
   )
 }
 
 let getData = async ()   => {
-  let response = await Fetch.get("/api/hello")
+  let response = await Fetch.get("/api/data")
   let profileData = await response->Fetch.Response.json
   let json = profileData->Jzon.decodeWith(Codecs.profile)
+  Js.log(json)
   json
 }
 
