@@ -22,7 +22,10 @@
     "@rescript/react",
     "rescript-next",
     "@glennsl/rescript-fetch",
-    "rescript-jzon"
+    "rescript-jzon",
+    "@greenlabs/ppx-spice"
   ],
-  "ppx-flags": []
+  "ppx-flags": [
+     "@greenlabs/ppx-spice/ppx"
+  ]
 }

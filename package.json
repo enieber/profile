@@ -23,5 +23,8 @@
     "build": "rescript build && next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "devDependencies": {
+    "@greenlabs/ppx-spice": "^0.1.12"
   }
 }
