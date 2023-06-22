@@ -34,9 +34,8 @@
     "linux",
     "angularjs",
     "heroku",
-    "github actions",
-    "gitlab pipeline",
-    "aws pipeline",
+    "github",
+    "gitlab",
     "aws",
     "rust"
   ],

@@ -14,7 +14,6 @@ let getData = async ()   => {
   profile
 }
 
-
 @react.component
 let make = () => {
   getData
