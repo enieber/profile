@@ -21,7 +21,7 @@
     "dev": "next dev",
     "res:build": "rescript",
     "res:watch": "rescript build -w",
-    "build": "rescript build && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
