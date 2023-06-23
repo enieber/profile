@@ -2,6 +2,7 @@ import React from "react";
 import { Option } from '@marionebl/option';
 import Image from 'next/image';
 import { styled } from 'styled-components';
+import { NextSeo } from 'next-seo';
 
 import Icons from '../components/Icons/index.js';
 
@@ -272,15 +273,43 @@ export default function Home() {
     const {
       name,
       description,
+      username,
       contents,
       skills,
       experiences,
       freelances,
       formations,
     } = data.payload;
+    const [firstName, ...rest] = name.split(" ");
+    const lastName = rest.join(" ");
+    const url = 'https://profile-enieber.vercel.app';
 
     return (
       <Container>
+        <NextSeo
+          title={`Profile - ${name}`}
+          description={description}
+          openGraph={{
+            url,
+            title: `Profile - ${name}`,
+            description: description,
+            siteName: name,
+            type: 'profile',
+            profile: {
+              firstName,
+              lastName,
+              username,
+            },
+            images: [
+              {
+                url: `${url}/logo.svg`,
+                width: 50,
+                height: 50,
+                alt: 'Profile Photo',
+              },
+            ],
+          }}
+        />
         <Header name={name} />
         <Skills skills={skills} description={description} />
         <ContentList contents={contents}/>
