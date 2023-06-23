@@ -1,6 +1,6 @@
 {
   "name": "Enieber Cunha da Silva",
-  "description": "Software Developer with experiences with develop mobile, frontend, backend and create tools to help peoples.",
+  "description": " Software Engineer | React | React Native | Nextjs | Java | Kotlin | Android Developer | Front End | PHP | Full Stack | Developer with experiences with develop mobile, frontend, backend and create tools to help peoples.",
   "contents": [
     {
       "name": "Blog in PT-BR",
@@ -37,12 +37,20 @@
     "github",
     "gitlab",
     "aws",
-    "rust"
+    "rust",
+    "vuejs",
+    "nextcloud"
   ],
   "experiences": [
     {
+      "title": "Software Engineer - LibreCode",
+      "start": "03/2023",
+      "description": "Develop solution to software LibreSign, mantainer services running in Nextcloud.Develop solution to software LibreSign, mantainer services running in Nextcloud."
+    },
+    {
       "title": "Frontend Developer - Cognizant",
       "start": "01/2022",
+      "end": "03/2023",
       "description": "Developer frontend aplication with rules of crop science in pharmaceutical company. Using typescript to create microfronends in react connected in Rest api and deployed in Azure cloud."
     },
     {

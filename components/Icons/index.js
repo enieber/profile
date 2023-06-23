@@ -1,12 +1,40 @@
 import dynamic from 'next/dynamic'
+import { styled } from 'styled-components'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: ${(props) => props.column ? 'column' : 'row'};
+  align-items: center;
+  min-width: 5vw;
+  background-color: #f7e9e9;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+`;
+
+const Title = styled.span`
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.5rem;
+  color: #20134b;
+`;
 
 export default function Icons(props) {
   const Icon = selectIcon(props.name);
+  if (props.mode === 'only-icon') {
+    return (
+      <Container column>
+        <Icon colo="#20134b" width={'1.5rem'} height={'1.5rem'} />
+        <Title>{props.children}</Title>
+    </Container>
+
+    )
+  }
   return (
-    <div>
-      <Icon/>
-      <span> {props.name}</span>
-    </div>
+    <Container>
+      <Icon color="#20134b" width={'1.5rem'} height={'1.5rem'} />
+      <Title>{props.name}</Title>
+    </Container>
   )
 }
 
@@ -100,6 +128,29 @@ function selectIcon(name) {
       return dynamic(() => import('./rust.js'), {
         loading: () => <p>Loading...</p>,
       })
+    case 'rss':
+      return dynamic(() => import('./rss.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'youtube':
+      return dynamic(() => import('./youtube.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'vuejs':
+      return dynamic(() => import('./vue.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'nextcloud':
+      return dynamic(() => import('./nextcloud.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'cc':
+      return dynamic(() => import('./cc.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+
+
+
     default:
       return dynamic(() => import('./404.js'), {
         loading: () => <p>Loading...</p>,
