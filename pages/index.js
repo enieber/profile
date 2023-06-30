@@ -63,6 +63,45 @@ const ContainerContent = styled.section`
   justify-content: space-between;
 `;
 
+const Circle = styled.div`
+  &:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: ${(props) => (!props.dark ? "#8445bc" : "#f7e9e9")};
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+
+  &:after {
+    content: '';
+    display: ${(props) => props.last ?  'none' :'flex'};
+    width: 10px;
+    height: 40vh;
+    background-color: rgba(0,0,0,0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: -20px;
+    margin-left: 10px;
+    background: ${(props) => (!props.dark ? "#8445bc" : "#f7e9e9")};
+  }
+  
+
+`;
+
+const ContainerItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+`;
+
+const ContainerItem = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 const ListNav = styled.nav`
   display: flex;
   align-items: center;
@@ -170,16 +209,32 @@ function Experiences(props) {
   return (
     <ContainerContent dark id="experience">
       <h2>Experiences</h2>
-      {experiences.map((experience) => {
+      {experiences.map((experience, index, array) => {
         return (
-          <div key={experience.title}>
-            <h3>{experience.title}</h3>
-            <span>
-              {experience.start}
-              {experience.end ? ` - ${experience.end}` : ""}
-            </span>
-            <p>{experience.description}</p>
-          </div>
+          <ContainerItem key={experience.title}>
+            <Circle
+              dark 
+              last={array[array.length -1] === experience}
+            />
+            <ContainerItemContent>
+              <h3>{experience.title}</h3>
+              <span>
+                {experience.start}
+                {experience.end ? ` - ${experience.end}` : ""}
+              </span>
+              <p>{experience.description}</p>
+      <ContainerList dark>
+        {experience.skills.map((skill) => {
+          return (
+            <div key={skill}>
+              <Icons small name={skill} />
+            </div>
+          );
+        })}
+      </ContainerList>
+
+            </ContainerItemContent>
+          </ContainerItem>
         );
       })}
     </ContainerContent>
@@ -191,12 +246,26 @@ function Freelances(props) {
   return (
     <ContainerContent id="freelance">
       <h2>Freelance</h2>
-      {freelances.map((freelance) => {
+      {freelances.map((freelance, index, array) => {
         return (
-          <div key={freelance.title}>
-            <h3>{freelance.title}</h3>
-            <p>{freelance.description}</p>
-          </div>
+         <ContainerItem key={freelance.title}>
+            <Circle last={array[array.length -1] === freelance}/>
+            <ContainerItemContent>
+              <h3>{freelance.title}</h3>
+
+              <p>{freelance.description}</p>
+          <ContainerList>
+        {freelance.skills.map((skill) => {
+          return (
+            <div key={skill}>
+              <Icons small name={skill} />
+            </div>
+          );
+        })}
+      </ContainerList>
+
+            </ContainerItemContent>
+          </ContainerItem>
         );
       })}
     </ContainerContent>

@@ -15,25 +15,26 @@ const Container = styled.div`
 const Title = styled.span`
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 1.5rem;
+  font-size: ${(props) => props.size};
   color: #20134b;
 `;
 
 export default function Icons(props) {
   const Icon = selectIcon(props.name);
+  const size = props.small ? '1rem': '2rem';
   if (props.mode === 'only-icon') {
     return (
       <Container column>
-        <Icon colo="#20134b" width={'1.5rem'} height={'1.5rem'} />
-        <Title>{props.children}</Title>
+        <Icon colo="#20134b" width={size} height={size} />
+        <Title size>{props.children}</Title>
     </Container>
 
     )
   }
   return (
     <Container>
-      <Icon color="#20134b" width={'1.5rem'} height={'1.5rem'} />
-      <Title>{props.name}</Title>
+      <Icon color="#20134b" width={size} height={size} />
+      <Title size>{props.name}</Title>
     </Container>
   )
 }
