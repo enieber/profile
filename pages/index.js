@@ -22,18 +22,33 @@ const LinkContent = styled.a`
   padding: 5px;
 `;
 
-const ContainerHeader = styled.header`
-  display: flex;
+
+const ContainerHeaderMobile = styled.div`
+  display: ${({ scrolled }) => scrolled < 300 ? 'none': 'flex'};
   position: sticky;
+  top: 0;
   left: 0;
-  width: 100vw;
+  max-width: 100vw;
   min-height: 10vh;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  background: ${(props) => (props.dark ? "#8445bc" : "#f7e9e9")};
+  background: #f7e9e9;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  color: #20134b;
+  justify-content: space-around;
+`;
+
+
+const ContainerHeader = styled.header`
+  display: ${({ scrolled }) => scrolled < 300 ? 'none': 'flex'};
+  position: sticky;
+  left: 0;
+  max-width: 100vw;
+  min-height: 10vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3vh;
+  background: #f7e9e9;
   color: #20134b;
   justify-content: space-around;
 `;
@@ -216,6 +231,20 @@ function Footer(props) {
   );
 }
 
+function HeaderMobile(props) {
+  const { name } = props;
+  return (
+    <ContainerHeaderMobile>
+      <ListNav>
+        <LinkContent href="#about"> About</LinkContent>
+        <LinkContent href="#experience">Experience</LinkContent>
+        <LinkContent href="#freelance">Freelance</LinkContent>
+        <LinkContent href="#formation"> Formation</LinkContent>
+      </ListNav>
+    </ContainerHeaderMobile>
+  );
+}
+
 function Header(props) {
   const { name } = props;
   return (
@@ -229,12 +258,6 @@ function Header(props) {
         />
         <LogoTitle>{name}</LogoTitle>
       </ContainerLogo>
-      <ListNav>
-        <LinkContent href="#about"> About</LinkContent>
-        <LinkContent href="#experience">Experience</LinkContent>
-        <LinkContent href="#freelance">Freelance</LinkContent>
-        <LinkContent href="#formation"> Formation</LinkContent>
-      </ListNav>
     </ContainerHeader>
   );
 }
@@ -306,6 +329,8 @@ export default function Home() {
           }}
         />
         <Header name={name} />
+        <HeaderMobile name={name} />
+
         <Skills skills={skills} description={description} />
         <ContentList contents={contents} />
         <Experiences experiences={experiences} />
