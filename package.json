@@ -28,6 +28,7 @@
     "lint": "next lint"
   },
   "devDependencies": {
-    "@greenlabs/ppx-spice": "^0.1.12"
+    "@greenlabs/ppx-spice": "^0.1.12",
+    "prettier": "^2.8.8"
   }
 }
