@@ -23,8 +23,8 @@ const LinkContent = styled.a`
 `;
 
 
-const ContainerHeaderMobile = styled.div`
-  display: ${({ scrolled }) => scrolled < 300 ? 'none': 'flex'};
+const ContainerHeaderMobile = styled.nav`
+  display: flex;
   position: sticky;
   top: 0;
   left: 0;
@@ -36,6 +36,7 @@ const ContainerHeaderMobile = styled.div`
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
   color: #20134b;
   justify-content: space-around;
+  align-items: center;
 `;
 
 
@@ -235,12 +236,10 @@ function HeaderMobile(props) {
   const { name } = props;
   return (
     <ContainerHeaderMobile>
-      <ListNav>
         <LinkContent href="#about"> About</LinkContent>
         <LinkContent href="#experience">Experience</LinkContent>
         <LinkContent href="#freelance">Freelance</LinkContent>
         <LinkContent href="#formation"> Formation</LinkContent>
-      </ListNav>
     </ContainerHeaderMobile>
   );
 }
