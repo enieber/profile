@@ -42,7 +42,7 @@ export default function Home({ data, error }) {
     } = dataOption.payload;
     const [firstName, ...rest] = name?.split(" ");
     const lastName = rest.join ? rest.join(" ") : name;
-    const url = location.origin;
+    const url = 'https://profile-enieber.vercel.app';
 
     return (
       <Container>
