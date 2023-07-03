@@ -100,6 +100,7 @@ export const getStaticProps = async (context) => {
       }
     );
 
+    console.log(result.data)
     return {
       props: {
         data: result.data,
