@@ -17,7 +17,7 @@ import {
 export default function Home({ data, error }) {
   const errorOption = Option.from(error);
   const dataOption = Option.from(data);
-  console.log(data, error) 
+
   if (dataOption.isSome()) {
     const {
       name,
@@ -98,7 +98,7 @@ export const getStaticProps = async (context) => {
       revalidate: revalidateTime,
     }
   } catch (err) {
-      console.log(err)
+    console.warn(err)
     return {
       props: {
         error: err.message,
