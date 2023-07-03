@@ -9,7 +9,6 @@
     "@glennsl/rescript-fetch": "^0.2.0",
     "@marionebl/option": "^1.0.8",
     "@rescript/react": "^0.11.0",
-    "axios": "^1.4.0",
     "next": "^13.2.4",
     "next-seo": "^6.1.0",
     "react": "^18.2.0",

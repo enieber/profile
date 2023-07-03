@@ -13,7 +13,6 @@ import {
   Footer,
   Container,
 } from '../components/index.js'
-import axios from 'axios'
 
 export default function Home({ data, error }) {
   const errorOption = Option.from(error);
@@ -90,7 +89,7 @@ export const getStaticProps = async (context) => {
   const revalidateTime = 60 * 60 * 12; // 12h
   try {
     const baseUrl = process.env.VERCEL_URL;
-    const res = await axios.get(`https://${baseUrl}/api/data`);
+    const res = await fetch(`https://${baseUrl}/api/data`);
     const result = await res.json()
     return {
       props: {
