@@ -17,16 +17,7 @@ import {
 export default function Home({ data, error }) {
   const errorOption = Option.from(error);
   const dataOption = Option.from(data);
-
-  if (errorOption.isSome()) {
-    return (
-      <div>
-        <h1>Deu erro</h1>
-        <p>{errorOption.payload?.message}</p>
-      </div>
-    );
-  }
-
+ 
   if (dataOption.isSome()) {
     const {
       name,
@@ -81,19 +72,28 @@ export default function Home({ data, error }) {
     );
   }
 
+ if (errorOption.isSome()) {
+    return (
+      <div>
+        <h1>Deu erro</h1>
+        <p>{errorOption.payload?.message}</p>
+      </div>
+    );
+  }
+
+
   return <div>Carregando...</div>;
 }
 
 export const getStaticProps = async (context) => {
   const revalidateTime = 60 * 60 * 12; // 12h
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_DOMAIN;
+    const baseUrl = process.env.VERCEL_URL;
     const res = await fetch(`${baseUrl}/api/data`);
     const result = await res.json()
     return {
       props: {
         data: result,
-        error: null,
       },
       revalidate: revalidateTime,
     }
@@ -101,7 +101,6 @@ export const getStaticProps = async (context) => {
     return {
       props: {
         error: err.message,
-        data: null,
       },
       revalidate: revalidateTime,
     }

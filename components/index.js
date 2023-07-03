@@ -207,7 +207,7 @@ export function Experiences(props) {
       {experiences.map((experience, index, array) => {
         return (
           <ContainerItem key={experience.title}>
-            <Circle dark={true} last={array[array.length - 1] === experience} />
+            <Circle dark={true} last={!!(array[array.length - 1] === experience)} />
             <ContainerItemContent>
               <h3>{experience.title}</h3>
               <span>
@@ -240,7 +240,7 @@ export function Freelances(props) {
       {freelances.map((freelance, index, array) => {
         return (
           <ContainerItem key={freelance.title}>
-            <Circle last={array[array.length - 1] === freelance} />
+            <Circle last={!!(array[array.length - 1] === freelance)} />
             <ContainerItemContent>
               <h3>{freelance.title}</h3>
 
