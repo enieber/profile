@@ -19,6 +19,16 @@ export default function Home({ data, error }) {
   const errorOption = Option.from(error);
   const dataOption = Option.from(data);
 
+ if (errorOption.isSome()) {
+    return (
+      <div>
+        <h1>Deu erro</h1>
+        <p>{errorOption.payload?.message}</p>
+      </div>
+    );
+  }
+
+
   if (dataOption.isSome()) {
     const {
       name,
@@ -30,9 +40,9 @@ export default function Home({ data, error }) {
       freelances,
       formations,
     } = dataOption.payload;
-    const [firstName, ...rest] = name.split(" ");
-    const lastName = rest.join(" ");
-    const url = "https://profile-enieber.vercel.app";
+    const [firstName, ...rest] = name?.split(" ");
+    const lastName = rest.join ? rest.join(" ") : name;
+    const url = location.origin;
 
     return (
       <Container>
@@ -72,16 +82,6 @@ export default function Home({ data, error }) {
       </Container>
     );
   }
-
- if (errorOption.isSome()) {
-    return (
-      <div>
-        <h1>Deu erro</h1>
-        <p>{errorOption.payload?.message}</p>
-      </div>
-    );
-  }
-
 
   return <div>Carregando...</div>;
 }
