@@ -90,15 +90,7 @@ export const getStaticProps = async (context) => {
   const revalidateTime = 60 * 60 * 12; // 12h
   try {
     const baseUrl = process.env.VERCEL_URL;
-    const result = await axios.get(
-      `http://${baseUrl}/api/data`,
-      {
-        headers: {
-          Accept: 'application/json',
-          'User-Agent': '*',
-        },
-      }
-    );
+    const result = await axios.get(`http://${baseUrl}/api/data`);
 
     console.log(result.data)
     return {
