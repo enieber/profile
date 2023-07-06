@@ -87,7 +87,7 @@ export default function Home({ data, error }) {
 }
 
 export const getStaticProps = async (context) => {
-  const revalidateTime = 60 * 60 * 12; // 12h
+  const revalidateTime = 60 * 60 * 2; // 2h
   try {
     const urlData = process.env.URL_DATA;
     const result = await axios.get(urlData);
