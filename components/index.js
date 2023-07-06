@@ -166,12 +166,14 @@ export function ContentList(props) {
         }
 
         return (
-          <div key={content.name}>
-            <a href={content.link} target="blank">
-              {content.name}
-            </a>
-          </div>
-        );
+            <div key={content.name}>
+              <LinkContent href={content.link} target="blank">
+                <Icons name={content.name.toLocaleLowerCase()} mode="only-icon">
+                  <span>{content.name}</span>
+                </Icons>
+              </LinkContent>
+            </div>
+          );
       })}
     </ContainerList>
   );
