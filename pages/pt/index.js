@@ -87,12 +87,7 @@ export default function Home({ data, error }) {
 }
 
 function return_url(context) {
-  if (process.env.NODE_ENV === "production") {
-    // if you are hosting a http website use http instead of https
-    return `https://${context.req.rawHeaders[1]}`;
-  } else if (process.env.NODE_ENV !== "production") {
-    return "http://localhost:3000";
-  }
+  return process.env.BASE_URL
 }
 
 export const getStaticProps = async (context) => {
