@@ -12,7 +12,7 @@ import {
   Freelances,
   Footer,
   Container,
-} from '../components/index.js'
+} from '../../components/index.js'
 import axios from 'axios'
 
 export default function Home({ data, error }) {
@@ -94,7 +94,7 @@ export const getStaticProps = async (context) => {
   const revalidateTime = 60 * 60 * 2; // 2h
   try {
     const baseUrl = return_url(context);
-    const result = await axios.get(`${baseUrl}/api/data`);
+    const result = await axios.get(`${baseUrl}/api/data-pt`);
 
     console.log(result.data)
     return {

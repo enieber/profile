@@ -1,0 +1,155 @@
+{
+  "name": "Enieber Cunha da Silva",
+  "username": "enieber",
+  "description": "Desenvolvedor de Software com experiência no desenvolvimento de aplicações móveis, frontend, backend e criação de ferramentas para auxiliar as pessoas.",
+  "contents": [
+    {
+      "name": "Blog em PT-BR",
+      "link": "https://olha-oque-fiz.vercel.app/"
+    },
+    {
+      "name": "Vídeos no Youtube",
+      "link": "https://www.youtube.com/user/eniebercunha"
+    },
+    {
+      "name": "Página no Github",
+      "link": "https://github.com/enieber"
+    }
+  ],
+  "skills": [
+    "js",
+    "java",
+    "typescript",
+    "kotlin",
+    "php",
+    "wordpress",
+    "shopify",
+    "react",
+    "react-native",
+    "nextjs",
+    "cypress",
+    "docker",
+    "docker-compose",
+    "nginx",
+    "nodejs",
+    "linux",
+    "angularjs",
+    "heroku",
+    "github",
+    "gitlab",
+    "aws",
+    "rust",
+    "vuejs",
+    "nextcloud"
+  ],
+  "experiences": [
+    {
+      "title": "Engenheiro de Software - LibreCode",
+      "start": "03/2023",
+      "description": "Desenvolver soluções para o software LibreSign, mantendo os serviços em execução no Nextcloud. Desenvolver soluções para o software LibreSign, mantendo os serviços em execução no Nextcloud.",
+      "skills": ["nextcloud", "vuejs", "php", "github"]
+    },
+    {
+      "title": "Desenvolvedor Frontend - Cognizant",
+      "start": "01/2022",
+      "end": "03/2023",
+      "skills": ["cypress", "react", "cloud", "github"],
+      "description": "Desenvolver aplicativos frontend com regras de ciência de culturas em uma empresa farmacêutica. Utilizando typescript para criar microfrontends em react conectados a uma API Rest e implantados na nuvem Azure."
+    },
+    {
+      "title": "Desenvolvedor Backend - Cognizant",
+      "start": "01/2021",
+      "end": "01/2022",
+      "skills": ["cypress", "nodejs", "docker", "docker-compose"],
+      "description": "Desenvolver aplicativo para framework de bot para responder em chats do Whatsapp em uma empresa de telecomunicações. Utilizando typescript para desenvolver módulos com teste unitário e teste end-to-end. Inicialmente, criei automação de teste end-to-end usando o Cypress e, posteriormente, auxiliei a equipe de QA a automatizar e salvar em PDF evidências dos testes end-to-end. Desenvolvi uma CLI para ajudar no desenvolvimento e integração de sistemas para serem executados usando docker-compose no ambiente de desenvolvimento."
+    },
+    {
+      "title": "Desenvolvedor Android - Cognizant",
+      "start": "05/2020",
+      "end": "11/2020",
+      "skills": ["android", "kotlin", "gitlab"],
+      "description": "Desenvolver aplicativo móvel para plataforma Android usando Kotlin em uma empresa bancária. Neste projeto, assumi a responsabilidade de manter e desenvolver novos recursos para o aplicativo usando módulos Android, teste unitário e teste de acessibilidade. O desenvolvimento precisava passar por testes de segurança e pipeline de CI/CD."
+    },
+    {
+      "title": "Desenvolvedor Mobile - StartSe",
+      "start": "09/2019",
+      "end": "02/2020",
+      "skills": ["android", "react", "react-native", "aws", "mongodb", "nodejs", "graphql"],
+      "description": "Desenvolvimento de um aplicativo web que centraliza todos os dados do usuário em um só lugar, feito em Reactjs e autenticado por outro aplicativo usando OAuth. Uma API feita em nodes também foi usada para capturar os dados do usuário logado. Registrar e desenvolver um aplicativo que permite ou utiliza todos os produtos oferecidos pela StartSe. Acompanhar cursos, eventos e missões adquiridos pelo usuário. Juntar-se a uma comunidade de ex-alunos encerra uma missão. Acompanhar notícias postadas na plataforma StartSe. Este aplicativo foi desenvolvido em react-native usando notificações com OneSignal para obter fluxos de interação em tempo real e conectado a uma API node."
+    },
+    {
+      "title": "Líder Desenvolvedor de Aplicativo Cliente - EuSouElliot",
+      "start": "01/2019",
+      "skills": ["react", "react-native", "nodejs"],
+      "end": "09/2019",
+      "description": "Desenvolvimento de uma estrutura inicial para a criação da versão PWA do aplicativo, para rastrear as transações feitas pelo aplicativo e monitorar a variação de preços das criptomoedas. Este projeto foi feito usando Reactjs e styled components. Melhoria e desenvolvimento do aplicativo, onde era possível realizar compra e venda de criptomoedas, além de monitorar suas compras, era possível visualizar notícias relacionadas a criptomoedas. Este aplicativo usou react-native, styled-component e conectado a uma API Rest."
+    },
+    {
+      "title": "Desenvolvedor de Software Móvel - Multiware Tecnologia",
+      "start": "08/2016",
+      "skills": ["android", "kotlin", "java", "php"],
+      "end": "01/2019",
+      "description": "Inicialmente, entrei na empresa para melhorar o aplicativo Android, que usa a conexão com um servidor específico para cada grupo de usuários, possibilitando gerenciar aplicativos, visualizar e renovar boletos para clientes, gerenciar viabilidade, gerenciar dados do cliente e visualizar métricas para executar decisões. Este aplicativo foi iniciado em java e foi reativado em modo nativo para uso no iOS. Era controlado por ações redux, tanto na parte lógica, como salvar um novo bilhete no banco de dados offline e posteriormente sincronizado, quanto na parte de navegação de tela, como fazer login e se movimentar. Ajudei a equipe e outros a desenvolver através de cursos rápidos de PHP, JS e outras habilidades. Ideia e desenvolvimento de um novo produto para facilitar ao cliente dos provedores alcançados pela TopSapp abrir e monitorar um caso chamado problemas com serviços fornecidos pela empresa comprovada também facilita o acesso à parte financeira do pagamento de dívidas. Este aplicativo foi feito em uma versão nativa e foi reprovado como base para recriar um aplicativo para cada versão quando o número de aplicativos publicados no Google Play e Playstore ultrapassou 30."
+    },
+    {
+      "title": "Desenvolvedor Frontend - JMJ Sistemas e Consultoria",
+      "start": "01/2016",
+      "skills": ["angularjs", "java"],
+      "end": "03/2016",
+      "description": "Entrei na empresa para ajudar no desenvolvimento de um produto web que registrava a frequência dos planos da Unimed. No projeto, havia uma API Rest em java e todo o frontend estava em angular 1.5."
+    },
+    {
+      "title": "Desenvolvedor Frontend - MBoss Tecnologia",
+      "start": "04/2015",
+      "skills": ["android", "java", "design"],
+      "end": "01/2016",
+      "description": "Como primeiro emprego na área de desenvolvimento de software, comecei como desenvolvedor frontend para criar a parte web do ERP feito para desktop. O Angular 1.5 foi usado para criar as diretivas e era para o frontend se conectar a uma API escrita em Java. Após alguns meses, comecei a trabalhar no aplicativo Android, onde era possível rastrear um pedido e fazer novos pedidos online ou offline. O aplicativo foi escrito em java e usou bibliotecas como Retrofit para se conectar à API em Java, e o SQLite também foi usado para salvar dados offline."
+    }
+  ],
+  "freelances": [
+    {
+      "title": "Contrate Telecon Plan",
+      "skills": ["nextjs", "heroku"],
+      "description": "Neste projeto, criei uma lista de planos para seleção e iniciei a contratação de serviços de telecomunicações. Neste projeto, é possível listar os planos da empresa, selecionar os planos, inserir dados do usuário e selecionar a localização para viabilidade ou não para a instalação do serviço selecionado. Este projeto foi construído com nextjs, API do Google, API zip e API de contexto para gerenciar estados."
+    },
+    {
+      "title": "Adicionar Compra In-App",
+      "skills": ["android", "react-native"],
+      "description": "Este projeto precisava adicionar conteúdo premium à versão do aplicativo. O aplicativo foi criado em react-native e minha responsabilidade foi adicionar a compra no aplicativo e fazer o upload para a loja Google Play."
+    },
+    {
+      "title": "Loja de Plugins Personalizados no Shopify",
+      "skills": ["shopify", "github"],
+      "description": "Este projeto exigia a troca de plugins e a correção de alguns bugs no plugin JS da loja. A loja foi criada usando o construtor Shopify e alguns plugins, e minha responsabilidade foi criar e manter algumas funcionalidades na loja usando JS e jQuery. Este projeto foi contratado por uma agência australiana."
+    },
+    {
+      "title": "Conectar página do Wordpress com CRM personalizado",
+      "skills": ["php", "wordpress", "js"],
+      "description": "Este projeto exigia adicionar chamada ao CRM ao baixar um arquivo e visitar páginas do site. Este projeto usou plugins personalizados no Wordpress em PHP e JS."
+    },
+    {
+      "title": "Professor de JS",
+      "skills": ["js"],
+      "description": "Fui professor de JS usando loja no Shopify e aplicativo react-native."
+    },
+    {
+      "title": "Criar curso de Iniciação em desenvolvimento de software",
+      "skills": ["js", "html", "css"],
+      "description": "Criei o curso de iniciação em desenvolvimento de software com jogos para jovens."
+    },
+    {
+      "title": "Criar curso PHP da maneira certa",
+      "skills": ["php"],
+      "description": "Criei um curso para explicar como programar PHP com boas práticas."
+    }
+  ],
+  "formations": [
+    {
+      "locale": "Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso",
+      "title": "Técnico em Informática - Desenvolvedor de Software",
+      "periodic": "2012 - 2015",
+      "description": "Atividades e Sociedades: Aprendi muito sobre informática em geral. Desenvolvi um projeto no final do primeiro ano do curso para unir todos os códigos criados ao longo do ano. Participei do Latinoware 2014 e tive contato com o mundo do desenvolvimento de código aberto. No final do curso, criamos um site institucional para o curso de informática e uma monografia. O site foi desenvolvido em Joomla e implantado em um serviço de hospedagem gratuito. \n Desenvolvi alguns projetos de pesquisa educacional e científica. Como ensinar música usando violino e viola. Um projeto de reciclagem de resíduos eletrônicos e escrevi um código Java para ler códigos de barras."
+    }
+  ]
+}
+
