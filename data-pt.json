@@ -40,7 +40,14 @@
     "aws",
     "rust",
     "vuejs",
-    "nextcloud"
+    "nextcloud",
+    "kubernetes",
+    "proxmox",
+    "lxc",
+    "ansible",
+    "go",
+    "python",
+    "odoo"
   ],
   "experiences": [
     {
@@ -107,6 +114,11 @@
     }
   ],
   "freelances": [
+    {
+      "title": "Addons Odoo com conexão proxmox",
+      "skills": ["odoo", "python", "lxc", "proxmox"],
+      "description": "Este projeto foi para conectar-se com api proxmox e gerenciar nós, amazenamento e criar containers lxc pela api do proxmox."
+    },
     {
       "title": "Contrate Telecon Plan",
       "skills": ["nextjs", "heroku"],
