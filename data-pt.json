@@ -92,7 +92,7 @@
       "description": "Desenvolvimento de uma estrutura inicial para a criação da versão PWA do aplicativo, para rastrear as transações feitas pelo aplicativo e monitorar a variação de preços das criptomoedas. Este projeto foi feito usando Reactjs e styled components. Melhoria e desenvolvimento do aplicativo, onde era possível realizar compra e venda de criptomoedas, além de monitorar suas compras, era possível visualizar notícias relacionadas a criptomoedas. Este aplicativo usou react-native, styled-component e conectado a uma API Rest."
     },
     {
-      "title": "Desenvolvedor de Software Móvel - Multiware Tecnologia",
+      "title": "Desenvolvedor de Software - Multiware Tecnologia",
       "start": "08/2016",
       "skills": ["android", "kotlin", "java", "php"],
       "end": "01/2019",
