@@ -92,7 +92,7 @@ function return_url(context) {
 export const getStaticProps = async (context) => {
   const revalidateTime = 60 * 60 * 2; // 2h
   try {
-    const baseUrl = 'http://localhost:3000'//return_url(context);
+    const baseUrl = return_url(context);
     const result = await axios.get(`${baseUrl}/api/data`);
 
     console.log(result.data)
