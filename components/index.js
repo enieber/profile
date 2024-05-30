@@ -9,11 +9,16 @@ import Icons from "./Icons/index.js";
 export const ContainerList = styled.section`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;    
   padding-top: 10vh;
   padding-bottom: 10vh;
   background: ${(props) => (props.dark ? "#8445bc" : "#f7e9e9")};
-  color: ${(props) => (props.dark ? "#f7e9e9" : "#8445bc")};
+  color: ${(props) => (props.dark ? "#f7e9e9" : "#8445bc")};  
+  @media print {
+    padding-top: 0;    
+    padding-bottom: 0;
+    color: #20134b;
+  }
 `;
 
 export const LinkContent = styled.a`
@@ -36,6 +41,9 @@ export const ContainerHeaderMobile = styled.nav`
   color: #20134b;
   justify-content: space-around;
   align-items: center;
+  @media print {
+    display: none;
+  }
 `;
 
 export const ContainerHeader = styled.header`
@@ -59,9 +67,17 @@ export const ContainerContent = styled.section`
   background: ${(props) => (props.dark ? "#8445bc" : "#f7e9e9")};
   color: ${(props) => (props.dark ? "#f7e9e9" : "#8445bc")};
   justify-content: space-between;
+
+  @media print {
+    padding: 0;
+    color: #20134b;
+  }
 `;
 
 export const Circle = styled.div`
+  @media print {
+    display: none;
+  }
   &:before {
     content: "";
     width: 30px;
@@ -96,6 +112,9 @@ export const ContainerItemContent = styled.div`
 export const ContainerItem = styled.div`
   display: flex;
   flex-direction: row;
+  @media print {
+    border-top: 3px solid #20134b;
+  }
 `;
 
 export const ListNav = styled.nav`
@@ -123,13 +142,19 @@ export const ContainerFooter = styled.footer`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  @media print{
+    display: none;
+  }
 `;
 
 export function ContentList(props) {
   const { contents } = props;
 
   return (
-    <ContainerList>
+    <ContainerContent>
+      <h3 style={{textAlign: 'center'}}>Links</h3>    
+      <ContainerList>
       {contents.map((content) => {
         if (content.name.toLocaleLowerCase().includes("github")) {
           return (
@@ -176,7 +201,8 @@ export function ContentList(props) {
           );
       })}
     </ContainerList>
-  );
+    </ContainerContent>
+        );
 }
 
 export function Skills(props) {
