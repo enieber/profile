@@ -51,10 +51,17 @@
   ],
   "experiences": [
     {
+      "title": "FullStack Developer - PopSolutions",
+      "start": "11/2023",
+      "description": "Developer apps odoo, matainer proxmox infraestructure using lxc e vm. Create automation of infraestructure with python, rust and go",
+      "skills": ["docker", "docker-compose", "lxc", "postgres", "odoo", "proxmox", "python", "go", "rust"]
+    },
+    {
       "title": "Software Engineer - LibreCode",
       "start": "03/2023",
-      "description": "Develop solution to software LibreSign, mantainer services running in Nextcloud.Develop solution to software LibreSign, mantainer services running in Nextcloud.",
-      "skills": ["nextcloud", "vuejs", "php", "github"]
+      "end": "07/2024",
+      "description": "Develop solution to software LibreSign, mantainer services running in Nextcloud with use of docker and docker compose and monitoring using Zabbix. Develop solution to software LibreSign, mantainer services running with Nextcloud.",
+      "skills": ["nextcloud", "vuejs", "php", "github", "docker", "docker-compose", "zabbix"]
     },
     {
       "title": "Frontend Developer - Cognizant",
