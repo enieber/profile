@@ -4,15 +4,15 @@
   "description": "Software Developer with experiences with develop mobile, frontend, backend and create tools to help peoples. ",
   "contents": [
     {
-      "name": "Blog in PT-BR",
+      "name": "Blog",
       "link": "https://olha-oque-fiz.vercel.app/"
     },
     {
-      "name": "Youtube videos",
+      "name": "Youtube",
       "link": "https://www.youtube.com/user/eniebercunha"
     },
     {
-      "name": "Github page",
+      "name": "Github",
       "link": "https://github.com/enieber"
     },
     {
@@ -20,7 +20,7 @@
       "link": "https://bolha.us/@enieber"
     },
     {
-      "name": "Pictures",
+      "name": "Pixelfed",
       "link": "https://pixelfed.social/devboladao"
     },
     {
@@ -61,7 +61,8 @@
     "python",
     "odoo",
     "windows",
-    "hardware"
+    "hardware",
+    "postgres"
   ],
   "experiences": [
     {

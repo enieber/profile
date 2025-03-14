@@ -4,23 +4,23 @@
   "description": "Desenvolvedor de Software com experiência no desenvolvimento de aplicações móveis, frontend, backend e criação de ferramentas para auxiliar as pessoas.",
   "contents": [
     {
-      "name": "Blog em PT-BR",
+      "name": "Blog",
       "link": "https://olha-oque-fiz.vercel.app/"
     },
     {
-      "name": "Vídeos no Youtube",
+      "name": "Youtube",
       "link": "https://www.youtube.com/user/eniebercunha"
     },
     {
-      "name": "Página no Github",
+      "name": "Github",
       "link": "https://github.com/enieber"
-    },    
+    },
     {
       "name": "Mastodon",
       "link": "https://bolha.us/@enieber"
     },
     {
-      "name": "Pictures",
+      "name": "Pixelfed",
       "link": "https://pixelfed.social/devboladao"
     },
     {
@@ -61,7 +61,8 @@
     "python",
     "odoo",
     "windows",
-    "hardware"
+    "hardware",
+    "postgres"
   ],
   "experiences": [
     {
