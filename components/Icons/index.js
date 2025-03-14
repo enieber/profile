@@ -45,6 +45,50 @@ function selectIcon(name) {
       return dynamic(() => import('./javascript.js'), {
         loading: () => <p>Loading...</p>,
       })
+    case 'proxmox':
+      return dynamic(() => import('./proxmox.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'ansible':
+      return dynamic(() => import('./ansible.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'kubernetes':
+      return dynamic(() => import('./kubernets.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'lxc':
+      return dynamic(() => import('./lxc.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'go':
+      return dynamic(() => import('./go.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'python':
+      return dynamic(() => import('./python.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'odoo':
+      return dynamic(() => import('./odoo.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'windows':
+      return dynamic(() => import('./windows.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'hardware':
+      return dynamic(() => import('./hardware.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'postgres':
+      return dynamic(() => import('./postgres.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'pixelfed':
+      return dynamic(() => import('./pixelfed.js'), {
+        loading: () => <p>Loading...</p>,
+      })
     case 'java':
       return dynamic(() => import('./java.js'), {
         loading: () => <p>Loading...</p>,
@@ -127,6 +171,18 @@ function selectIcon(name) {
       })
     case 'rust':
       return dynamic(() => import('./rust.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'blog':
+      return dynamic(() => import('./rss.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'mastodon':
+      return dynamic(() => import('./mastodon.js'), {
+        loading: () => <p>Loading...</p>,
+      })
+    case 'behance':
+      return dynamic(() => import('./behance.js'), {
         loading: () => <p>Loading...</p>,
       })
     case 'rss':
