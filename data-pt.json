@@ -14,6 +14,18 @@
     {
       "name": "Página no Github",
       "link": "https://github.com/enieber"
+    },    
+    {
+      "name": "Mastodon",
+      "link": "https://bolha.us/@enieber"
+    },
+    {
+      "name": "Pictures",
+      "link": "https://pixelfed.social/devboladao"
+    },
+    {
+      "name": "Behance",
+      "link": "https://www.behance.net/enieber"
     }
   ],
   "skills": [
@@ -47,7 +59,9 @@
     "ansible",
     "go",
     "python",
-    "odoo"
+    "odoo",
+    "windows",
+    "hardware"
   ],
   "experiences": [
     {
@@ -118,6 +132,13 @@
       "skills": ["android", "java", "design"],
       "end": "01/2016",
       "description": "Como primeiro emprego na área de desenvolvimento de software, comecei como desenvolvedor frontend para criar a parte web do ERP feito para desktop. O Angular 1.5 foi usado para criar as diretivas e era para o frontend se conectar a uma API escrita em Java. Após alguns meses, comecei a trabalhar no aplicativo Android, onde era possível rastrear um pedido e fazer novos pedidos online ou offline. O aplicativo foi escrito em java e usou bibliotecas como Retrofit para se conectar à API em Java, e o SQLite também foi usado para salvar dados offline."
+    },
+    {
+      "title": "Especialista em Suporte de TI - Obone Company",
+      "start": "03/2009",
+      "skills": ["windows", "hardware"],
+      "end": "02/2015",
+      "description": "Reparo de computadores e notebooks, formatação e instalação de software, configuração de rede e serviços"
     }
   ],
   "freelances": [
