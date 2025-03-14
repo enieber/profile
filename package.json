@@ -21,7 +21,7 @@
     "styled-components": "^6.0.0-rc.5"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "BASE_URL=http://localhost:3000  next dev",
     "res:build": "rescript",
     "res:watch": "rescript build -w",
     "build": "next build",
