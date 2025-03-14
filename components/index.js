@@ -156,40 +156,6 @@ export function ContentList(props) {
       <h3 style={{textAlign: 'center'}}>Links</h3>    
       <ContainerList>
       {contents.map((content) => {
-        if (content.name.toLocaleLowerCase().includes("github")) {
-          return (
-            <div key={content.name}>
-              <LinkContent href={content.link} target="blank">
-                <Icons name="github" mode="only-icon">
-                  <span>{content.name}</span>
-                </Icons>
-              </LinkContent>
-            </div>
-          );
-        }
-        if (content.name.toLocaleLowerCase().includes("youtube")) {
-          return (
-            <div key={content.name}>
-              <LinkContent href={content.link} target="blank">
-                <Icons name="youtube" mode="only-icon">
-                  <span>{content.name}</span>
-                </Icons>
-              </LinkContent>
-            </div>
-          );
-        }
-        if (content.name.toLocaleLowerCase().includes("blog")) {
-          return (
-            <div key={content.name}>
-              <LinkContent href={content.link} target="blank">
-                <Icons name="rss" mode="only-icon">
-                  <span>{content.name}</span>
-                </Icons>
-              </LinkContent>
-            </div>
-          );
-        }
-
         return (
             <div key={content.name}>
               <LinkContent href={content.link} target="blank">
