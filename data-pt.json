@@ -59,7 +59,9 @@
     "ansible",
     "go",
     "python",
-    "odoo"
+    "odoo",
+    "windows",
+    "hardware"
   ],
   "experiences": [
     {
