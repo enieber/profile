@@ -7,9 +7,8 @@ import Icons from "./Icons/index.js";
 export const ContainerList = styled.section`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;    
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  flex-wrap: wrap;
+  padding: 10vh 2.5vw;
   background: ${(props) => (props.dark ? "#8445bc" : "#f7e9e9")};
   color: ${(props) => (props.dark ? "#f7e9e9" : "#8445bc")};  
   @media print {
