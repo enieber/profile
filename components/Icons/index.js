@@ -20,7 +20,6 @@ import PhpIcon from './php.js'
 import WordpressIcon from './wp.js'
 import ShopifyIcon from './shopify.js'
 import ReactIcon from './react.js'
-import ReactNativeIcon from './rn.js'
 import NextjsIcon from './next.js'
 import CypressIcon from './cypress.js'
 import DockerIcon from './docker.js'
@@ -51,6 +50,11 @@ const Container = styled.div`
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
+
+  svg path {
+    fill: #20134b;
+  }
+
 `;
 
 const Title = styled.span`
@@ -102,7 +106,7 @@ function selectIcon(name) {
     'wordpress': WordpressIcon,
     'shopify': ShopifyIcon,
     'react': ReactIcon,
-    'react-native': ReactNativeIcon,
+    'react-native': ReactIcon,
     'nextjs': NextjsIcon,
     'cypress': CypressIcon,
     'docker': DockerIcon,
