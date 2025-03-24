@@ -1,8 +1,6 @@
 import React from "react";
-import { Option } from "@marionebl/option";
 import Image from "next/image";
 import { styled } from "styled-components";
-import { NextSeo } from "next-seo";
 
 import Icons from "./Icons/index.js";
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Option } from "@marionebl/option";
-import Image from "next/image";
 import { NextSeo } from "next-seo";
 import {
   Header,
@@ -89,18 +88,15 @@ function return_url(context) {
   return process.env.BASE_URL
 }
 
-export const getStaticProps = async (context) => {
-  const revalidateTime = 60 * 60 * 2; // 2h
+export const getServerSideProps = async (context) => {  
   try {
     const baseUrl = return_url(context);
     const result = await axios.get(`${baseUrl}/api/data`);
 
-    console.log(result.data)
     return {
       props: {
         data: result.data,
       },
-      revalidate: revalidateTime,
     }
   } catch (err) {
     console.warn(err)
@@ -108,7 +104,6 @@ export const getStaticProps = async (context) => {
       props: {
         error: err.message,
       },
-      revalidate: revalidateTime,
     }
   }
 }

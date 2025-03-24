@@ -1,5 +1,46 @@
-import dynamic from 'next/dynamic'
 import { styled } from 'styled-components'
+
+// Importe todos os ícones estaticamente
+import JavascriptIcon from './javascript.js'
+import ProxmoxIcon from './proxmox.js'
+import AnsibleIcon from './ansible.js'
+import KubernetesIcon from './kubernets.js'
+import LxcIcon from './lxc.js'
+import GoIcon from './go.js'
+import PythonIcon from './python.js'
+import OdooIcon from './odoo.js'
+import WindowsIcon from './windows.js'
+import HardwareIcon from './hardware.js'
+import PostgresIcon from './postgres.js'
+import PixelfedIcon from './pixelfed.js'
+import JavaIcon from './java.js'
+import TypescriptIcon from './typescript.js'
+import KotlinIcon from './kotlin.js'
+import PhpIcon from './php.js'
+import WordpressIcon from './wp.js'
+import ShopifyIcon from './shopify.js'
+import ReactIcon from './react.js'
+import ReactNativeIcon from './rn.js'
+import NextjsIcon from './next.js'
+import CypressIcon from './cypress.js'
+import DockerIcon from './docker.js'
+import NginxIcon from './nginx.js'
+import NodejsIcon from './node.js'
+import LinuxIcon from './linux.js'
+import AngularjsIcon from './angular.js'
+import HerokuIcon from './heroku.js'
+import GithubIcon from './github.js'
+import GitlabIcon from './gitlab.js'
+import AwsIcon from './aws.js'
+import RustIcon from './rust.js'
+import MastodonIcon from './mastodon.js'
+import BehanceIcon from './behance.js'
+import RssIcon from './rss.js'
+import YoutubeIcon from './youtube.js'
+import VuejsIcon from './vue.js'
+import NextcloudIcon from './nextcloud.js'
+import CcIcon from './cc.js'
+import NotFoundIcon from './404.js'
 
 const Container = styled.div`
   display: flex;
@@ -22,15 +63,16 @@ const Title = styled.span`
 export default function Icons(props) {
   const Icon = selectIcon(props.name);
   const size = props.small ? '1rem': '2rem';
+  
   if (props.mode === 'only-icon') {
     return (
       <Container column>
-        <Icon colo="#20134b" width={size} height={size} />
+        <Icon color="#20134b" width={size} height={size} />
         <Title size>{props.children}</Title>
-    </Container>
-
+      </Container>
     )
   }
+  
   return (
     <Container>
       <Icon color="#20134b" width={size} height={size} />
@@ -40,177 +82,49 @@ export default function Icons(props) {
 }
 
 function selectIcon(name) {
-  switch (name) {
-    case 'js':
-      return dynamic(() => import('./javascript.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'proxmox':
-      return dynamic(() => import('./proxmox.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'ansible':
-      return dynamic(() => import('./ansible.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'kubernetes':
-      return dynamic(() => import('./kubernets.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'lxc':
-      return dynamic(() => import('./lxc.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'go':
-      return dynamic(() => import('./go.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'python':
-      return dynamic(() => import('./python.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'odoo':
-      return dynamic(() => import('./odoo.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'windows':
-      return dynamic(() => import('./windows.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'hardware':
-      return dynamic(() => import('./hardware.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'postgres':
-      return dynamic(() => import('./postgres.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'pixelfed':
-      return dynamic(() => import('./pixelfed.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'java':
-      return dynamic(() => import('./java.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'typescript':
-      return dynamic(() => import('./typescript.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'kotlin':
-      return dynamic(() => import('./kotlin.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'php':
-      return dynamic(() => import('./php.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'wordpress':
-      return dynamic(() => import('./wp.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'shopify':
-      return dynamic(() => import('./shopify.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'react':
-      return dynamic(() => import('./react.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'react-native':
-      return dynamic(() => import('./rn.js'), {
-        loading: () => <p>Loading...</p>,
-      })          
-    case 'nextjs':
-      return dynamic(() => import('./next.js'), {
-        loading: () => <p>Loading...</p>,
-      })          
-    case 'cypress':
-      return dynamic(() => import('./cypress.js'), {
-        loading: () => <p>Loading...</p>,
-      })          
-    case 'docker':
-      return dynamic(() => import('./docker.js'), {
-        loading: () => <p>Loading...</p>,
-      })          
-    case 'docker-compose':
-      return dynamic(() => import('./docker.js'), {
-        loading: () => <p>Loading...</p>,
-      })          
-    case 'nginx':
-      return dynamic(() => import('./nginx.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'nodejs':
-      return dynamic(() => import('./node.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'linux':
-      return dynamic(() => import('./linux.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'angularjs':
-      return dynamic(() => import('./angular.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'heroku':
-      return dynamic(() => import('./heroku.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'github':
-      return dynamic(() => import('./github.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'gitlab':
-      return dynamic(() => import('./gitlab.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'aws':
-      return dynamic(() => import('./aws.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'rust':
-      return dynamic(() => import('./rust.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'blog':
-      return dynamic(() => import('./rss.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'mastodon':
-      return dynamic(() => import('./mastodon.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'behance':
-      return dynamic(() => import('./behance.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'rss':
-      return dynamic(() => import('./rss.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'youtube':
-      return dynamic(() => import('./youtube.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'vuejs':
-      return dynamic(() => import('./vue.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'nextcloud':
-      return dynamic(() => import('./nextcloud.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-    case 'cc':
-      return dynamic(() => import('./cc.js'), {
-        loading: () => <p>Loading...</p>,
-      })
-
-
-
-    default:
-      return dynamic(() => import('./404.js'), {
-        loading: () => <p>Loading...</p>,
-      })
+  const icons = {
+    'js': JavascriptIcon,
+    'proxmox': ProxmoxIcon,
+    'ansible': AnsibleIcon,
+    'kubernetes': KubernetesIcon,
+    'lxc': LxcIcon,
+    'go': GoIcon,
+    'python': PythonIcon,
+    'odoo': OdooIcon,
+    'windows': WindowsIcon,
+    'hardware': HardwareIcon,
+    'postgres': PostgresIcon,
+    'pixelfed': PixelfedIcon,
+    'java': JavaIcon,
+    'typescript': TypescriptIcon,
+    'kotlin': KotlinIcon,
+    'php': PhpIcon,
+    'wordpress': WordpressIcon,
+    'shopify': ShopifyIcon,
+    'react': ReactIcon,
+    'react-native': ReactNativeIcon,
+    'nextjs': NextjsIcon,
+    'cypress': CypressIcon,
+    'docker': DockerIcon,
+    'docker-compose': DockerIcon,
+    'nginx': NginxIcon,
+    'nodejs': NodejsIcon,
+    'linux': LinuxIcon,
+    'angularjs': AngularjsIcon,
+    'heroku': HerokuIcon,
+    'github': GithubIcon,
+    'gitlab': GitlabIcon,
+    'aws': AwsIcon,
+    'rust': RustIcon,
+    'blog': RssIcon,
+    'mastodon': MastodonIcon,
+    'behance': BehanceIcon,
+    'rss': RssIcon,
+    'youtube': YoutubeIcon,
+    'vuejs': VuejsIcon,
+    'nextcloud': NextcloudIcon,
+    'cc': CcIcon
   }
- }
+
+  return icons[name] || NotFoundIcon
+}
