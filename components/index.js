@@ -13,6 +13,7 @@ export const ContainerList = styled.section`
   background: ${(props) => (props.dark ? "#8445bc" : "#f7e9e9")};
   color: ${(props) => (props.dark ? "#f7e9e9" : "#8445bc")};  
   @media print {
+    display: ${(props) => (props.no_print ? "none" : "flex")};      
     padding-top: 0;    
     padding-bottom: 0;
     color: #20134b;
@@ -178,7 +179,7 @@ export function Skills(props) {
         <h2> About </h2>
         <p>{description}</p>
       </ContainerContent>
-      <ContainerList dark={true}>
+      <ContainerList dark={true} no_print>
         {skills.map((skill) => {
           return (
             <div key={skill}>
