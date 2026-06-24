@@ -66,6 +66,12 @@
   ],
   "experiences": [
     {
+      "title":"Adminstrador de Infraestrutura",
+      "start": "08/2025",
+      "description": "Criar e manter clusters Kubernetes gerenciados por provedores de cloud, como DigitalOcean, Azure e AWS, além de administrar clusters single-node e em alta disponibilidade utilizando RKE2 e K3s. Configurar e realizar manutenção em bancos de dados PostgreSQL em alta disponibilidade, utilizando Ansible, Autobase ou processos manuais. Criar pipelines em GitHub, GitLab e Bitbucket. Documentar, revisar e aprimorar procedimentos de deploy e manutenção.",
+      "skill": ["rke2", "k3s", "rancher", "kubernetes", "digital ocean", "postgresql", "python", "odoo", "operator-k8s", "github", "gitlab"]
+    },
+    {
       "title": "FullStack Developer - PopSolutions",
       "start": "11/2023",
       "description": "Desenvolver aplicações Odoo e manter infraestrutura com proxmox, lxc e vm. Criar automações de infraestrutura usando go, python e rust",
