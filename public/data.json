@@ -69,7 +69,7 @@
   ],
   "experiences": [
     {
-      "title":"Infraestructure Manager",
+      "title":"Infraestructure Manager - KMEE",
       "start": "08/2025",
       "description": "Create and maintain Kubernetes clusters managed by cloud providers such as DigitalOcean, Azure, and AWS, as well as administer single-node and high-availability clusters using RKE2 and K3s. Configure and maintain high-availability PostgreSQL databases using Ansible, Autobase, or manual processes. Create pipelines in GitHub, GitLab, and Bitbucket. Document, review, and improve deployment and maintenance procedures.",
       "skill": ["rke2", "k3s", "rancher", "kubernetes", "digital ocean", "postgresql", "python", "odoo", "operator-k8s", "github", "gitlab"]
