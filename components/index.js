@@ -193,6 +193,7 @@ export function Skills(props) {
 
 export function Experiences(props) {
   const { experiences } = props;
+  if (!experiences) returno (<p>loading</p>) 
   return (
     <ContainerContent dark={true} id="experience">
       <h2>Experiences</h2>
