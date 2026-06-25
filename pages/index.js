@@ -93,6 +93,7 @@ export const getServerSideProps = async (context) => {
     const baseUrl = return_url(context);
     const result = await axios.get(`${baseUrl}/api/data`);
 
+    console. log('result', resultado)
     return {
       props: {
         data: result.data,
