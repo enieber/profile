@@ -1,7 +1,7 @@
 {
   "name": "Enieber Cunha da Silva",
   "username": "enieber",
-  "description": "Sou um desenvolvedor com vasta experiência em arquitetura full stack, infraestrutura e automação. Ao longo da minha carreira, atuei no desenvolvimento de aplicações móveis (Android e React Native), front-end escalável (React, Angular e Vue), back-end robusto (Node.js, php e C#) usando APIs REST, além de trabalhar com gestão de infraestrutura usando Docker, Proxmox, Kubernetes, LXC e automações em Python, Rust e Go.",
+  "description": "Desenvolvedor com mais de 10 anos de experiência, atuando nas últimas posições como Administrador de Infraestrutura/DevOps com forte background em desenvolvimento full stack. Especialista em Kubernetes, automação de infraestrutura, CI/CD e observabilidade. Experiência sólida em arquitetura cloud (Azure, AWS, DigitalOcean), orquestração de containers e desenvolvimento de ferramentas customizadas em Rust, Go e Python. Background anterior em desenvolvimento mobile (Android/Kotlin, React Native), frontend (React, Angular, Vue) e backend (Node.js, PHP, C#).",
   "contents": [
     {
       "name": "Blog",
@@ -68,8 +68,8 @@
     {
       "title":"Adminstrador de Infraestrutura - KMEE",
       "start": "08/2025",
-      "description": "Criar e manter clusters Kubernetes gerenciados por provedores de cloud, como DigitalOcean, Azure e AWS, além de administrar clusters single-node e em alta disponibilidade utilizando RKE2 e K3s. Configurar e realizar manutenção em bancos de dados PostgreSQL em alta disponibilidade, utilizando Ansible, Autobase ou processos manuais. Criar pipelines em GitHub, GitLab e Bitbucket. Documentar, revisar e aprimorar procedimentos de deploy e manutenção.",
-      "skills": ["rke2", "k3s", "rancher", "kubernetes", "digital ocean", "postgresql", "python", "odoo", "operator-k8s", "github", "gitlab"]
+      "description": "Administração de clusters Kubernetes (RKE2 em HA e K3s) e monitoramento de pods. Upgrade do GitLab self-hosted (v15 → v18) e pipelines de CI/CD em GitLab, GitHub Actions (Azure Container Registry) e Bitbucket (registry público). Deploy de Odoo na Azure (VM hardenizada, PostgreSQL gerenciado, Load Balancer, SSL via Front Door) e migração AWS S3 → Azure Blob Storage. Infraestrutura on-premise com Proxmox (VMs via OpenTofu/Terraform), Docker Compose, Podman em Red Hat e clusters K8s na DigitalOcean via Rancher. Banco de dados PostgreSQL em VMs Ubuntu com Ansible, padronização de ambientes produtivos com Autobase e dev/hml com Ansible puro. Observabilidade com Graylog, APM Elasticsearch e cluster Elasticsearch em HA. Ferramentas customizadas em Rust: monitoramento de deploys via Rancher e operador K8s para Odoo 14 com rollback automático (dev/hml/stg). Helm Charts com CI/CD, policies de segurança em K8s, migração Nginx Ingress → Gateway API e cron jobs em Linux/K8s. Documentação de procedimentos via runbooks.",
+      "skills": ["rke2", "k3s", "rancher", "kubernetes", "digital ocean", "postgresql", "python", "odoo", "operator-k8s", "github", "gitlab", "rust"]
     },
     {
       "title": "FullStack Developer - PopSolutions",

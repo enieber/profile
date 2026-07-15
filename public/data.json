@@ -1,7 +1,7 @@
 {
   "name": "Enieber Cunha da Silva",
   "username": "enieber",
-  "description": "I am a developer with extensive experience in full stack architecture, infrastructure and automation. Throughout my career, I have worked on developing mobile applications (Android and React Native), scalable front-end (React, Angular and Vue), robust back-end (Node.js, php and C#) using REST APIs, as well as working with infrastructure management using Docker, Proxmox, Kubernetes, LXC and automations in Python, Rust and Go.",
+  "description": "Developer with over 10 years of experience, currently working as Infrastructure Administrator/DevOps with a strong full stack development background. Specialist in Kubernetes, infrastructure automation, CI/CD, and observability. Solid experience in cloud architecture (Azure, AWS, DigitalOcean), container orchestration, and development of custom tooling in Rust, Go, and Python. Previous background in mobile development (Android/Kotlin, React Native), frontend (React, Angular, Vue), and backend (Node.js, PHP, C#).",
   "contents": [
     {
       "name": "Blog",
@@ -71,7 +71,7 @@
     {
       "title":"Infraestructure Manager - KMEE",
       "start": "08/2025",
-      "description": "Create and maintain Kubernetes clusters managed by cloud providers such as DigitalOcean, Azure, and AWS, as well as administer single-node and high-availability clusters using RKE2 and K3s. Configure and maintain high-availability PostgreSQL databases using Ansible, Autobase, or manual processes. Create pipelines in GitHub, GitLab, and Bitbucket. Document, review, and improve deployment and maintenance procedures.",
+      "description": "Kubernetes cluster administration (RKE2 in HA and K3s) and pod monitoring. GitLab self-hosted upgrade (v15 → v18) and CI/CD pipelines across GitLab, GitHub Actions (Azure Container Registry), and Bitbucket (public registry). Odoo deployment on Azure (hardened VM, managed PostgreSQL, Load Balancer, SSL via Front Door) and AWS S3 → Azure Blob Storage migration. On-premise infrastructure with Proxmox (VMs via OpenTofu/Terraform), Docker Compose, Podman on Red Hat, and K8s clusters on DigitalOcean via Rancher. PostgreSQL on Ubuntu VMs with Ansible, standardization of production environments with Autobase and dev/staging with pure Ansible. Observability with Graylog, APM Elasticsearch, and HA Elasticsearch cluster. Custom Rust tooling: deployment monitoring via Rancher and K8s operator for Odoo 14 with automatic rollback (dev/staging). Helm Charts with CI/CD, K8s security policies, Nginx Ingress → Gateway API migration, and cron jobs on Linux/K8s. Procedure documentation via runbooks.",
       "skills": ["rke2", "k3s", "rancher", "kubernetes", "digital ocean", "postgresql", "python", "odoo", "operator-k8s", "github", "gitlab"]
     },
     {
