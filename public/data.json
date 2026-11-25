@@ -71,12 +71,14 @@
     {
       "title":"Infraestructure Manager - KMEE",
       "start": "08/2025",
+      "end": "03/2026",
       "description": "Kubernetes cluster administration (RKE2 in HA and K3s) and pod monitoring. GitLab self-hosted upgrade (v15 → v18) and CI/CD pipelines across GitLab, GitHub Actions (Azure Container Registry), and Bitbucket (public registry). Odoo deployment on Azure (hardened VM, managed PostgreSQL, Load Balancer, SSL via Front Door) and AWS S3 → Azure Blob Storage migration. On-premise infrastructure with Proxmox (VMs via OpenTofu/Terraform), Docker Compose, Podman on Red Hat, and K8s clusters on DigitalOcean via Rancher. PostgreSQL on Ubuntu VMs with Ansible, standardization of production environments with Autobase and dev/staging with pure Ansible. Observability with Graylog, APM Elasticsearch, and HA Elasticsearch cluster. Custom Rust tooling: deployment monitoring via Rancher and K8s operator for Odoo 14 with automatic rollback (dev/staging). Helm Charts with CI/CD, K8s security policies, Nginx Ingress → Gateway API migration, and cron jobs on Linux/K8s. Procedure documentation via runbooks.",
       "skills": ["rke2", "k3s", "rancher", "kubernetes", "digital ocean", "postgresql", "python", "odoo", "operator-k8s", "github", "gitlab"]
     },
     {
       "title": "FullStack Developer - PopSolutions",
       "start": "11/2023",
+      "end": "03/2025",
       "description": "Developer apps odoo, matainer proxmox infraestructure using lxc e vm. Create automation of infraestructure with python, rust and go",
       "skills": ["docker", "docker-compose", "lxc", "postgres", "odoo", "proxmox", "python", "go", "rust"]
     },
